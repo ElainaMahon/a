@@ -38,7 +38,7 @@ jobs:
       - image: ruby:2.5
     parallelism: 4   
  
-  endvoc39:
+  endvoc4:
     <<: *script
     docker:
       - image: ruby:2.4    
@@ -51,7 +51,7 @@ workflows:
       - endvoc1
       - endvoc2
       - endvoc3
-      
+      - endvoc4
 
 
     triggers:
@@ -68,3 +68,4 @@ workflows:
       - endvoc1
       - endvoc2
       - endvoc3
+      - endvoc4
